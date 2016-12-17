@@ -1,0 +1,11 @@
+<template name="home">
+  <div class="container">
+    <div id="masonry-grid" class="row">
+
+      {{#each post}}
+        {{> postPartial}}
+      {{/each}}
+    </div>
+  </div>
+  {{> newPost}}
+</template>
